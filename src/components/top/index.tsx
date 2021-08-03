@@ -25,7 +25,7 @@ const TopContainer = styled.div`
   box-sizing: border-box;
   background: transparent;
 
-  svg {
+  img {
     ${tw`w-36 md:w-full`}
   }
 
@@ -48,7 +48,7 @@ const TopContainerForPost = styled.div<{ scrollDown: boolean }>`
 
   z-index: 999;
 
-  svg {
+  img {
     ${tw`w-36`};
   }
 
@@ -71,12 +71,12 @@ export const Top: React.FC<ITopProps> = ({ title, location, rootPath, isPost }) 
     <>
       {isPost ? (
         <TopContainerForPost scrollDown={scrollDown}>
-          <Link to={`/`}>{state?.theme === THEME.DARK ? <LogoWhite /> : <Logo />}</Link>
+          <Link to={`/`}>{state?.theme === THEME.DARK ? <img src={LogoWhite} alt={title} title={title} /> : <img src={Logo} alt={title} title={title} />}</Link>
           <ThemeSwitch />
         </TopContainerForPost>
       ) : (
         <TopContainer>
-          <Link to={`/`}>{state?.theme === THEME.DARK ? <LogoWhite /> : <Logo />}</Link>
+          <Link to={`/`}>{state?.theme === THEME.DARK ? <img src={LogoWhite} alt={title} title={title} /> : <img src={Logo} alt={title} title={title} />}</Link>
           <ThemeSwitch />
         </TopContainer>
       )}

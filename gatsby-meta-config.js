@@ -1,6 +1,6 @@
 module.exports = {
   title: `hoondevfeed`,
-  description: `Front-end developer, Lim Ji Hoon's Blog.`,
+  description: `Frontend Engineering Journey. written by hoondeveloper.`,
   author: `Lim Ji Hoon`,
   introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
   siteUrl: `https://feed.hoondev.com`, // Your blog site url
@@ -21,7 +21,7 @@ module.exports = {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: 'jbee',
+    buyMeACoffeeId: '',
   },
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
