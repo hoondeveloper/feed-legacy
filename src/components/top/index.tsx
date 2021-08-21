@@ -49,7 +49,7 @@ const TopContainerForPost = styled.div<{ scrollDown: boolean }>`
   z-index: 999;
 
   img {
-    ${tw`w-36`};
+    ${tw`w-36 m-0`};
   }
 
   ${tw`transition-all border-solid border-0 border-b border-black dark:border-white border-opacity-0 dark:border-opacity-0 px-8 py-6 w-full h-24`};
